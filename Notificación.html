@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alertas de Riego y Cuidados</title>
+  <link rel="stylesheet" href="Notificación.css">
+</head>
+<body>
+
+  <header>
+    <h1>Mis Plantas - Notificaciones de Cuidado</h1>
+  </header>
+
+  <main>
+    <section class="form-section">
+      <h2>Configura tus Alertas</h2>
+      <form id="alert-form">
+        <label for="plant-name">Nombre de la Planta:</label>
+        <input type="text" id="plant-name" required>
+
+        <label for="care-type">Tipo de Cuidado:</label>
+        <select id="care-type" required>
+          <option value="Riego">Riego</option>
+          <option value="Fertilización">Fertilización</option>
+          <option value="Poda">Poda</option>
+        </select>
+
+        <label for="alert-date">Fecha de Alerta:</label>
+        <input type="date" id="alert-date" required>
+
+        <button type="submit">Guardar Alerta</button>
+      </form>
+    </section>
+
+    <section class="alerts-section">
+      <h2>Mis Alertas</h2>
+      <div id="alerts-container"></div>
+    </section>
+
+    <section class="images-section">
+        <h2>Consejos de Cuidado</h2>
+        <div class="image-grid">
+          <div class="image-card">
+            <img src="image/riego.jpg" alt="Riego de plantas">
+            <h3>Riego</h3>
+            <p>Proporciona la cantidad adecuada de agua para mantener las raíces sanas y promover un crecimiento fuerte.</p>
+          </div>
+          <div class="image-card">
+            <img src="image/fertilizante.jpg" alt="Fertilización de plantas">
+            <h3>Fertilización</h3>
+            <p>Aporta nutrientes esenciales para mejorar el desarrollo, floración y resistencia de tus plantas.</p>
+          </div>
+          <div class="image-card">
+            <img src="image/poda-de-plantas-en-jardines-exteriores-1080x675.jpg" alt="Poda de plantas">
+            <h3>Poda</h3>
+            <p>Elimina partes dañadas o fomenta nuevas ramas para mantener la forma y la salud de la planta.</p>
+          </div>
+        </div>
+      </section>
+      
+  </main>
+
+  <div id="toast" class="toast">¡Alerta guardada exitosamente!</div>
+
+  <script src="Notificación.js"></script>
+
+</body>
+</html>
+

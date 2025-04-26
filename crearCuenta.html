@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registrar</title>
+  <link rel="stylesheet" href="crearCuenta.css">
+</head>
+<body>
+  <div class="container">
+    <div class="image-section">
+      <img src="image/gerberas.webp" alt="Sign up background">
+    </div>
+    <div class="form-section">
+      <h2>Regístrese</h2>
+      <p>Vamos a configurarlo todo para que pueda acceder a su cuenta personal.</p>
+
+      <form>
+        <div class="form-group-row">
+          <input type="text" placeholder="Nombre" required>
+          <input type="text" placeholder="Apellido" required>
+        </div>
+        <div class="form-group-row">
+          <input type="email" placeholder="Correo Electrónico" required>
+          <input type="text" placeholder="Número de celular" required>
+        </div>
+        <input type="password" placeholder="Contraseña" class="contraseña" required>
+        <input type="password" placeholder="Confirmar contraseña" required>
+
+        <label class="terms">
+          <input type="checkbox" required>
+          Acepto todos los <span>Términos</span> y <span>Políticas de privacidad</span>
+        </label>
+
+        <button type="submit" class="create-account">Crear una cuenta</button>
+
+        <p class="login-link">¿Ya tienes una cuenta? <a href="Login.html">Iniciar sesión</a></p>
+
+        <div class="or">O regístrate con</div>
+
+        <div class="social-buttons">
+          <button><img src="https://cdn-icons-png.flaticon.com/128/5968/5968764.png" width="20" alt="Facebook"></button>
+          <button><img src="https://cdn-icons-png.flaticon.com/512/281/281764.png" width="20" alt="Google"></button>
+          <button><img src="https://cdn-icons-png.flaticon.com/128/25/25345.png" width="20" alt="Apple"></button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
