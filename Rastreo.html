@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rastreo de Producto</title>
+    <link rel="stylesheet" href="Css/Rastreo.css">
+</head>
+<body>
+
+    <!-- Barra superior verde -->
+    <header class="navbar">
+        <div class="logo">🌿 AinboFlora</div>
+        <nav class="nav-links">
+            <a href="#">Inicio</a>
+            <a href="#">Artículos</a>
+            <a href="#">Catálogo</a>
+            <a href="#">Plantas</a>
+        </nav>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button>🔍</button>
+        </div>
+    </header>
+
+    <!-- Sección de rastreo -->
+    <section class="tracking-section">
+        <h1>Conoce dónde se encuentra tu envío</h1>
+        <form id="trackingForm" class="tracking-form">
+            <input type="text" id="orderNumber" placeholder="N° de Orden" required>
+            <input type="text" id="orderCode" placeholder="Código de Orden" required>
+            <button type="submit">Buscar ➔</button>
+        </form>
+
+        <div id="trackingResult" class="tracking-result"></div>
+
+        <div id="progressBar" class="progress-bar">
+            <div class="step" id="step1">Procesando</div>
+            <div class="step" id="step2">En camino</div>
+            <div class="step" id="step3">Entregado</div>
+        </div>
+    </section>
+
+    <script src="js/Rastreo.js"></script>
+</body>
+</html>
+
