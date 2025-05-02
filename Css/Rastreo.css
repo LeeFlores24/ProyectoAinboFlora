@@ -8,15 +8,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-/* Barra de navegación */
-.navbar {
-    background-color: #2e7d32; /* verde */
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 30px;
-    color: white;
-}
+
 
 .logo {
     font-weight: bold;
