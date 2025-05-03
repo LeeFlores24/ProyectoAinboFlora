@@ -77,6 +77,33 @@ body {
     margin:0;
 }
 
+/*=========================CONTACTOS BACKGROUND================================*/
+#bg-contactos {
+    position: relative;
+    top: -130px;
+} 
+
+ #seccion-contacto{
+    background-color:#198754;
+    min-height:500px;
+    position:relative;
+}
+
+/*=========================CONTACTOS FORMULARIO================================*/
+
+#contenedor-formulario {
+    position: relative;
+    top: -110px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+}
+
+#titulo-formulario {
+    color:#198754;
+}
+
+
 
 
 /*=========================FOOTER================================*/
@@ -168,6 +195,19 @@ footer p {
 /**ia*/
 
 
+
+
+
+
+
+
+
+
+
+.card {
+    margin-bottom: 20px;
+    transition: transform 0.3s;
+}
 
 .card:hover {
     transform: translateY(-5px);
