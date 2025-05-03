@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Verify Code</title>
+  <link rel="stylesheet" href="Css/VerificarCodigo.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Sección izquierda -->
+    <div class="login-form">
+      <a href="Login.html" class="back-link">← Volver al inicio de sesión</a>
+      <h2>Verificar código</h2>
+      <p>Se ha enviado un código de autenticación a su correo electrónico.</p>
+
+      <div class="form-group">
+        <label for="code">Introducir código</label>
+        <div class="input-icon">
+          <input type="password" id="code" placeholder="778B6MEX">
+          <span class="toggle-password" onclick="toggleVisibility()">👁️‍🗨️</span>
+        </div>
+      </div>
+
+      <p class="resend-text">¿No recibiste el código? <a href="#">Reenviar</a></p>
+
+      <button onclick="verifyCode()">Verificar</button>
+    </div>
+
+    <!-- Imagen derecha -->
+    <div class="image-side" style="background-image: url('image/Flor\ en\ 4k.jpg');"></div>
+  </div>
+
+  <script>
+    function toggleVisibility() {
+      const input = document.getElementById("code");
+      input.type = input.type === "password" ? "text" : "password";
+    }
+
+    function verifyCode() {
+      const code = document.getElementById("code").value;
+      if (code === "") {
+        alert("Please enter the verification code.");
+      } else {
+        alert("Code verified: " + code); // Aquí podrías hacer una redirección o validación real
+      }
+    }
+  </script>
+</body>
+</html>
