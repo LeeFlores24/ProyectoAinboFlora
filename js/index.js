@@ -299,3 +299,137 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }, 5000);
 });
+
+
+
+
+
+
+
+
+
+// Función para cargar productos manteniendo tu estructura HTML
+document.addEventListener('DOMContentLoaded', function() {
+    // 1. Identificar automáticamente los contenedores de productos
+    const productSections = document.querySelectorAll('.product-section .row');
+    
+    // Mostrar loader en cada sección
+    productSections.forEach(section => {
+        section.innerHTML = `
+            <div class="col-12 text-center py-5">
+                <div class="spinner-border text-success" role="status">
+                    <span class="visually-hidden">Cargando...</span>
+                </div>
+            </div>
+        `;
+    });
+
+    // 2. Consumir la API
+    fetch('http://localhost:3306/api/productos')
+        .then(response => response.json())
+        .then(data => {
+            if (!data.success) throw new Error('Error en los datos');
+            
+            // 3. Clasificar productos según tus secciones existentes
+            const productosPorCategoria = {
+                'Plantas': [],
+                'Maceteros': [],
+                'Semillas': [],
+                'Herramientas': []
+            };
+
+            data.data.forEach(producto => {
+                const categoria = producto.Categoria.toLowerCase();
+                if (categoria.includes('planta')) {
+                    productosPorCategoria.Plantas.push(producto);
+                } else if (categoria.includes('macetero')) {
+                    productosPorCategoria.Maceteros.push(producto);
+                } else if (categoria.includes('semilla')) {
+                    productosPorCategoria.Semillas.push(producto);
+                } else if (categoria.includes('herramienta')) {
+                    productosPorCategoria.Herramientas.push(producto);
+                }
+            });
+
+            // 4. Insertar productos en las secciones correspondientes
+            productSections.forEach(section => {
+                const sectionTitle = section.closest('.product-section')
+                    .querySelector('.section-title').textContent.toLowerCase();
+                
+                let productos = [];
+                if (sectionTitle.includes('planta')) {
+                    productos = productosPorCategoria.plantas;
+                } else if (sectionTitle.includes('macetero')) {
+                    productos = productosPorCategoria.maceteros;
+                } else if (sectionTitle.includes('semilla')) {
+                    productos = productosPorCategoria.semillas;
+                } else if (sectionTitle.includes('herramienta')) {
+                    productos = productosPorCategoria.herramientas;
+                }
+
+                // Limpiar sección
+                section.innerHTML = '';
+
+                // Agregar productos o mensaje si no hay
+                if (productos.length === 0) {
+                    section.innerHTML = `
+                        <div class="col-12 text-center py-5">
+                            <i class="bi bi-emoji-frown fs-1 text-muted"></i>
+                            <p class="mt-3">No hay productos disponibles</p>
+                        </div>
+                    `;
+                } else {
+                    productos.forEach(producto => {
+                        section.appendChild(crearTarjetaProducto(producto));
+                    });
+                }
+            });
+        })
+        .catch(error => {
+            console.error('Error:', error);
+            productSections.forEach(section => {
+                section.innerHTML = `
+                    <div class="col-12 text-center py-5 text-danger">
+                        <i class="bi bi-exclamation-triangle-fill"></i>
+                        <p>Error al cargar los productos</p>
+                    </div>
+                `;
+            });
+        });
+});
+
+// Función para crear tarjetas compatible con tu diseño actual
+function crearTarjetaProducto(producto) {
+    const col = document.createElement('div');
+    col.className = 'col-md-4 col-lg-3 mb-4';
+
+    col.innerHTML = `
+        <div class="card h-100">
+            ${producto.Stock <= 0 ? '<span class="badge bg-danger position-absolute top-0 end-0 m-2">Agotado</span>' : ''}
+            ${producto.Categoria === 'Nuevo' ? '<span class="badge bg-primary position-absolute top-0 start-0 m-2">Nuevo</span>' : ''}
+            
+            <img src="${producto.Imagen || 'https://via.placeholder.com/300x200?text=Imagen+No+Disponible'}" 
+                 class="card-img-top product-img" 
+                 alt="${producto.Nombre}"
+                 onerror="this.src='https://via.placeholder.com/300x200?text=Imagen+No+Disponible'">
+            
+            <div class="card-body">
+                <h5 class="card-title">${producto.Nombre}</h5>
+                <p class="card-text text-muted small">${producto.Descripcion || 'Sin descripción disponible'}</p>
+            </div>
+            
+            <div class="card-footer bg-white">
+                <div class="d-flex justify-content-between align-items-center">
+                    <span class="text-success fw-bold">S/${producto.Precio.toFixed(2)}</span>
+                    <button class="btn btn-sm btn-outline-success add-to-cart" 
+                            data-id="${producto.id}"
+                            ${producto.Stock <= 0 ? 'disabled' : ''}>
+                        <i class="bi bi-cart-plus"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    `;
+
+    return col;
+}
