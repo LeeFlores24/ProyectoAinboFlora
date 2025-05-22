@@ -1,515 +1,444 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Catálogo de Jardinería</title>
-  <link rel="stylesheet" href="Css/catalogo.css" />
-  <link rel="icon" href="image/Captura de pantalla 2025-05-21 124020.png" type="image/png">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Catálogo de Jardinería</title>
+    <link rel="stylesheet" href="Css/catalogo.css" />
+    <link
+      rel="icon"
+      href="image/Captura de pantalla 2025-05-21 124020.png"
+      type="image/png"
+    />
 
-   <!-- Bootstrap CSS -->
-   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
-   <!--icons-->
-   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-
-</head>
-<body>
-      <!-- Encabezado con promoción -->
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css"
+    />
+    <!--icons-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Encabezado con promoción -->
     <header class="container-fluid bg-success d-flex justify-content-center">
-        <p class="text-light mb-0 p-2 fs-6">Envíos gratis en compras mayores a S/100 | 15% DESCUENTO EN TU PRIMERA
-            COMPRA</p>
+      <p class="text-light mb-0 p-2 fs-6">
+        Envíos gratis en compras mayores a S/100 | 15% DESCUENTO EN TU PRIMERA
+        COMPRA
+      </p>
     </header>
 
-      <!-- Barra de navegación mejorada -->
+    <!-- Barra de navegación mejorada -->
     <nav class="navbar navbar-expand-lg navbar-light p-3 shadow-sm" id="menu">
-        <div class="container">
-            <a class="navbar-brand" href="index.html">
-                <span class="fs-4 text-success fw-bold">AinboFlora.</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="fs-4 text-success fw-bold">AinboFlora.</span>
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
 
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-flower1 me-1"></i> Productos
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <li><a class="dropdown-item" href="Plantas.html">Plantas</a></li>
-                            <li><a class="dropdown-item" href="Maceteros.html">Maceteros</a></li>
-                            <li><a class="dropdown-item" href="Semillas.html">Semillas</a></li>
-                            <li><a class="dropdown-item" href="Herramientas.html">Herramientas</a></li>
-                            <li>
-                                <hr class="dropdown-divider">
-                            </li>
-                            <li><a class="dropdown-item" href="Catálogo.html">Catálogo Completo</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="JardinVirtual.html">
-                            <i class="bi bi-tree me-1"></i> Jardín Virtual
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Blog.html">
-                            <i class="bi bi-journal-text me-1"></i> Blog
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="Rastreo.html">
-                            <i class="bi bi-truck me-1"></i> Seguimiento
-                        </a>
-                    </li>
-                </ul>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                id="navbarDropdown"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                <i class="bi bi-flower1 me-1"></i> Productos
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li>
+                  <a class="dropdown-item" href="Plantas.html">Plantas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Maceteros.html">Maceteros</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Semillas.html">Semillas</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Herramientas.html"
+                    >Herramientas</a
+                  >
+                </li>
+                <li>
+                  <hr class="dropdown-divider" />
+                </li>
+                <li>
+                  <a class="dropdown-item" href="Catálogo.html"
+                    >Catálogo Completo</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="JardinVirtual.html">
+                <i class="bi bi-tree me-1"></i> Jardín Virtual
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Blog.html">
+                <i class="bi bi-journal-text me-1"></i> Blog
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="Rastreo.html">
+                <i class="bi bi-truck me-1"></i> Seguimiento
+              </a>
+            </li>
+          </ul>
 
-                <div class="d-flex">
-                    <form class="d-flex me-2">
-                        <input class="form-control me-2" type="search" placeholder="¿Qué estás buscando?"
-                            aria-label="Buscar">
-                        <button class="btn btn-outline-success" type="submit">Buscar</button>
-                    </form>
-                    <div class="d-flex align-items-center">
-                        <a class="nav-link me-2" href="Login.html">
-                            <i class="bi bi-person-circle fs-5"></i>
-                        </a>
+          <div class="d-flex">
+            <form class="d-flex me-2">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="¿Qué estás buscando?"
+                aria-label="Buscar"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Buscar
+              </button>
+            </form>
+            <div class="d-flex align-items-center">
+              <a class="nav-link me-2" href="Login.html">
+                <i class="bi bi-person-circle fs-5"></i>
+              </a>
 
-                        <button class="btn-carrito nav-link position-relative" onclick="abrirCarrito()" style="background:none; border:none;">
-                            <i class="bi bi-cart3 fs-5"></i>
-                            <span class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">0</span>
-                          </button>
-                    </div>
-                </div>
+              <button
+                class="btn-carrito nav-link position-relative"
+                onclick="abrirCarrito()"
+                style="background: none; border: none"
+              >
+                <i class="bi bi-cart3 fs-5"></i>
+                <span class="contador-carrito badge bg-danger position-absolute top-0 start-100 translate-middle rounded-pill" style="display: none;">0</span>
+
+              </button>
             </div>
+          </div>
         </div>
+      </div>
     </nav>
-    
 
-  <!-- Filtros por categoría -->
-  <nav class="filter-bar">
-    <button onclick="filtrarCategoria('Plantas')">Plantas</button>
-    <button onclick="filtrarCategoria('Maceteros')">Maceteros</button>
-    <button onclick="filtrarCategoria('Semillas')">Semillas</button>
-    <button onclick="filtrarCategoria('Artículos de jardinería')">Artículos de jardinería</button>
-    <button onclick="filtrarCategoria('Todas')">Ver todo</button>
-  </nav>
+    <!-- Filtros por categoría -->
+    <nav class="filter-bar">
+      <button onclick="filtrarCategoria('Plantas')">Plantas</button>
+      <button onclick="filtrarCategoria('Maceteros')">Maceteros</button>
+      <button onclick="filtrarCategoria('Semillas')">Semillas</button>
+      <button onclick="filtrarCategoria('Artículos de jardinería')">
+        Artículos de jardinería
+      </button>
+      <button onclick="filtrarCategoria('Todas')">Ver todo</button>
+    </nav>
 
-  <!-- Secciones del Catálogo -->
-  <section class="catalog-section" data-categoria="Plantas">
-    <h2>Plantas</h2>
-    <div class="carousel-container">
-      <button class="prev" onclick="moverCarrusel('Plantas', -1)">❮</button>
-      <div class="carousel" id="carrusel-Plantas">
-        <div class="product" onclick="mostrarDetalles('Romero', 'Salvia rosmarinus, ​ conocida popularmente como romero, es una hierba leñosa perenne, con follaje siempre verde y flores blancas, rosas, púrpuras o azules, perteneciente a la familia Lamiaceae, nativa de la región mediterránea.', '15 soles')">
-          <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1662051370.jpg?crop=0.900xw:0.900xh;0,0.0531xh&resize=980:*" alt="Planta 1">
-          <h3>Romero</h3>
-          <p>20 soles</p>
-          <button class="boton-comprar" onclick="event.stopPropagation(); agregarAlCarrito('Romero', 20)">🛒 Comprar</button>
+    <!-- Secciones del Catálogo -->
+    <section class="catalog-section" data-categoria="Plantas">
+      <h2>Plantas</h2>
+      <div class="carousel-container">
+        <button class="prev" onclick="moverCarrusel('Plantas', -1)">❮</button>
+        <div class="carousel" id="carrusel-Plantas"></div>
+        <button class="next" onclick="moverCarrusel('Plantas', 1)">❯</button>
+      </div>
+    </section>
 
-        </div>
-        <div class="product" onclick="mostrarDetalles('Girasol', 'Cultivar girasoles en maceta es posible, pero requiere una maceta grande, sol directo y buen drenaje', '12 soles')">
-          <img src="https://www.floristeriamorris.com/wp-content/uploads/cuanto-tarda-en-crecer-un-girasol-en-maceta-min.png" alt="Planta 2">
-          <h3>Girasol</h3>
-          <p>12 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Drosera capensis', 'Drosera capensis es originaria de la provincia del Cabo, África de donde adopta su nombre. Es una especie resistente y de fácil cultivo, en comparación con otras plantas insectívoras.​​​', '39.90 soles')">
-          <img src="https://lesdentsdelaterre.com/wp-content/uploads/2020/05/Drosera-capensis-1.jpg" alt="Planta 3">
-          <h3>Drosera capensis</h3>
-          <p>39.90 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Nepenthes', 'Nepenthes, género de planta carnívora, conocida popularmente como plantas jarra o copas de mono. Es el único género de la familia Nepenthaceae. Son plantas oriundas de las regiones tropicales del Viejo Mundo.', '65.90 soles')">
-          <img src="https://cdn.webshopapp.com/shops/337304/files/403761519/756x1008x3/nepenthes-alata-grande-o-12-cm-x-15-cm.jpg" alt="Planta 4">
-          <h3>Nepentes</h3>
-          <p>65.90 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Venus Atrapamoscas', 'Esta planta también es conocida como Venus Atrapamoscas, ya que fundamentalmente se alimenta de estos insectos.', '49.90 soles')">
-          <img src="https://www.hogarjardin.com.ar/wp-content/uploads/2022/12/Planta_Carnivora_Venus.jpg" alt="Planta 5">
-          <h3>Venus Atrapamoscas</h3>
-          <p>49.90 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Sarracenia', 'Sarracenia es un género de plantas con flores que comprende nueve a once especies de plantas carnívoras nativas de Norteamérica. El género pertenece a la familia Sarraceniaceae, que también contiene los géneros Darlingtonia y Heliamphora.', '72.90 soles')">
-          <img src="https://cdn.webshopapp.com/shops/337304/files/431347231/756x1008x3/sarracenia-farnhamii-grande-o-12-cm-x-25-30-cm.jpg" alt="Planta 6">
-          <h3>Sarracenia</h3>
-          <p>72.90 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('mammillaria gracilis', 'El mammillaria gracilis es un cactus pequeño con diminutas espinas que, desde cierta distancia, recuerda a una mano con dedos plateados. Los plantones son ovalados y, con el tiempo, los tallos se alargan y crecen en forma de columna. ', '8.90 soles')">
-          <img src="https://comprateuncactus.es/wp-content/uploads/Mammillaria-Gracilis-Fragilis%C2%B42.jpg-600x600.png" alt="Planta 7">
-          <h3>mammillaria gracilis</h3>
-          <p>8.90 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Kroenleinia grusonii', 'Kroenleinia grusonii, llamado comúnmente asiento de suegra, biznaga tonel dorada, bola de oro, barril de oro, o cactus erizo, es una especie perteneciente a la familia Cactaceae.', '18.90 soles')">
-          <img src="https://cdn.webshopapp.com/shops/107930/files/390333412/echinocactus-grusonii-xl.jpg" alt="Planta 8">
-          <h3>Kroenleinia grusonii</h3>
-          <p>18.90 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Gerbera', 'Las gerberas, también conocidas como margaritas africanas, se pueden cultivar fácilmente en macetas. Para un buen desarrollo, elige una maceta con buen drenaje y un sustrato rico y aireado. Es importante mantener la planta en un lugar soleado y ventilado, con temperaturas entre 18 y 24°C. ', '18 soles')">
-          <img src="https://www.germigarden.com/30099-thickbox_default/comprar-gerbera.jpg" alt="Planta 9">
-          <h3>Gerbera</h3>
-          <p>18 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Cedrón', 'El cedrón, también conocido como hierbaluisa o verbena de Indias, es una planta nativa de América del Sur que se utiliza tanto por sus propiedades medicinales como por su agradable aroma.', '16.90 soles')">
-          <img src="https://media.cdn.bauhaus/m/1304015/12.jpg" alt="Planta 10">
-          <h3>Cedrón</h3>
-          <p>23 soles</p>
-        </div>
-      </div>
-      <button class="next" onclick="moverCarrusel('Plantas', 1)">❯</button>
-    </div>
-  </section>
-  
+    <section class="catalog-section" data-categoria="Maceteros">
+      <h2>Maceteros</h2>
+      <div class="catalog-grid" id="grid-Maceteros"></div>
+    </section>
 
-  <section class="catalog-section" data-categoria="Maceteros">
-    <h2>Maceteros</h2>
-    <div class="catalog-grid">
-      <div class="product" onclick="mostrarDetalles('Maceta de barro', 'Una maceta de barro clásica que queda bien en cualquier ubicación. En este caso el modelo tiene unas dimensiones de 50 cm.', '22.90 soles')">
-        <img src="https://discomgrup.com/wp-content/webp-express/webp-images/uploads/2021/07/11500-300x297.jpeg.webp" alt="Planta 1">
-        <h3>Maceta de barro</h3>
-        <p>22.90 soles</p>
+    <section class="catalog-section" data-categoria="Semillas">
+      <h2>Semillas</h2>
+      <div class="carousel-container">
+        <button class="prev" onclick="moverCarrusel('Semillas', -1)">❮</button>
+        <div class="carousel" id="carrusel-Semillas"></div>
+        <button class="next" onclick="moverCarrusel('Semillas', 1)">❯</button>
       </div>
-      <div class="product" onclick="mostrarDetalles('Macetas Cerámica Esfera Granito Negro', 'Macetas de cerámica en color negro con efecto granito. Cuentan con una resina impermeabilizante para protegerlas de la tierra y el agua. Todas las macetas vienen con agujeros para drenar el exceso de agua y con plato.', '20 - 86 soles')">
-        <img src="https://jardin.pe/wp-content/uploads/2023/07/Maceta-esfera-negro-granito-tamanos-0-1-600x600.jpg" alt="Planta 2">
-        <h3>Macetas Cerámica Esfera Granito Negro</h3>
-        <p>20 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('Maceta de plástico', 'Las macetas de plástico son una excelente opción para aquellos que buscan una solución duradera y económica para sus plantas. ', '18 soles')">
-        <img src="https://www.reyplast.pe/imagenes/MACETA_PALMETO_1_COPIA.jpg" alt="Planta 3">
-        <h3>Maceta de plástico</h3>
-        <p>18 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('Maceta tela geotextil', 'El uso de macetas geotextiles puede ayudar a reducir la incidencia de enfermedades en las plantas. Al permitir un mejor drenaje y aireación, se minimizan las condiciones propicias para el desarrollo de hongos y bacterias.', '12.90 soles')">
-        <img src="https://elalquimistagrow.com/wp-content/uploads/2024/04/lotus80.jpg" alt="Planta 4">
-        <h3>Maceta tela geotextil</h3>
-        <p>25 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('Maceta de fibra de coco', '¿Cansado de lidiar con macetas que se agrietan o se rompen fácilmente? ¡Tenemos la solución perfecta para ti! Nuestras macetas de fibra de coco son la opción ideal para aquellos que buscan durabilidad y resistencia sin sacrificar el estilo. Olvídate de preocuparte por el drenaje del agua o las raíces que se asfixian.', '9.90 soles')">
-        <img src="https://m.media-amazon.com/images/I/51zR4SOoFXL.jpg" alt="Planta 5">
-        <h3>Maceta de fibra de coco</h3>
-        <p>9.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('Macetas biodegradables.', 'En las macetas biodegradables puedes germinar semillas en ambientes controlados como el interior de tu casa.  Una vez que la planta ha crecido y está más adaptada al medio ambiente, la siembras en su destino final: Otra maceta, una jardinera o directamente en la tierra.', '8.90 soles')">
-        <img src="https://resources.claroshop.com/medios-plazavip/s2/11203/2885827/61295aeb750b4-macetas-biodegradables-1600x1600.jpg" alt="Planta 6">
-        <h3>Macetas biodegradables.</h3>
-        <p>8.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('Macetas para plántulas', 'Nuestras plántulas de invernadero las bandejas están hechas de pulpa de papel, que es biodegradable, conveniente y respetuosa con el medio ambiente, y no daña el medio ambiente. 3,5 cm/1,4 * 1,4 pulgadas y el tamaño de la etiqueta de la planta es 10 * 2 cm/3,9 * 0,79 pulgadas', '6.90 soles')">
-        <img src="https://i5.walmartimages.com/asr/e84745fe-357f-4771-a757-c1eba4a9233b.688e7949de95fc5857b381de04807060.jpeg?odnHeight=612&odnWidth=612&odnBg=FFFFFF" alt="Planta 7">
-        <h3>Macetas para plántulas</h3>
-        <p>6.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('Maceta De Cemento Cubo', 'Descripción de planta 8', '39.90 soles')">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_687819-MLA47970965063_102021-O.webp" alt="Planta 8">
-        <h3>Maceta De Cemento Cubo</h3>
-        <p>39.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('Maceta Jardinera Famafi Fibrocemento', 'Descripción de planta 7', '62.90 soles')">
-        <img src="https://http2.mlstatic.com/D_NQ_NP_823837-MLA54776646645_032023-O.webp" alt="Planta 7">
-        <h3>Maceta Jardinera Famafi Fibrocemento</h3>
-        <p>62.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('Maceteros Cerámica con Plato Greco Blanco', 'Preciosos maceteros de Ceramica con plato estilo greco color blanco.', '25.90 soles')">
-        <img src="https://static.wixstatic.com/media/154f07_286d66bc1a5240e19141ce96f169a510~mv2.png/v1/fill/w_500,h_667,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/154f07_286d66bc1a5240e19141ce96f169a510~mv2.png" alt="Planta 7">
-        <h3>Maceteros Cerámica con Plato Greco Blanco</h3>
-        <p>25.90 soles</p>
-      </div>
-    </div>
-  </section>
+    </section>
 
-  <section class="catalog-section" data-categoria="Semillas">
-    <h2>Semillas</h2>
-    <div class="carousel-container">
-      <button class="prev" onclick="moverCarrusel('Semillas', -1)">❮</button>
-      <div class="carousel" id="carrusel-Semillas">
-        <div class="product" onclick="mostrarDetalles('Semilla de tomate', '¡El tomate cherry es una pequeña y sabrosa alegría que explota en cada bocado! Con su tamaño mínimo y colores vívidos, es un regalo de la naturaleza que aporta sabor y frescura a tus platos.', '11.90 soles')">
-          <img src="https://calyxplantas.com/cdn/shop/products/37SEMILLATOMATECHERRYCALYXPLANTASBOGOTA-830150.jpg?v=1693000429" alt="Planta 1">
-          <h3>Semillas de tomate</h3>
-          <p>11.90 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Semilla de culantro', 'El culantro tiene grandes propiedades gastrointestinales y funciona como un antioxidante natural. Las semillas Hortus son de gran calidad y con el debido cuidado obtendrás los resultados esperados.', '8.20 soles')">
-          <img src="https://promart.vteximg.com.br/arquivos/ids/493519-1000-1000/15059.jpg?v=637314836764900000" alt="Planta 2">
-          <h3>Semillas de culantro</h3>
-          <p>8.20 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Semilla de pepino', 'Fruto cilíndrico y comestible con el que se preparan exquisitas ensaladas crudas, refrescantes y agradables. Estas verduras requieren de un suelo rico en humus, blando y bien drenado, pues se alteran con el exceso de humedad y con el frío.', '9.30 soles')">
-          <img src="https://www.apicola.cl/wp-content/uploads/2019/06/SEMILLAS_DE_PEPINO_MARKETMORE.jpg" alt="Planta 3">
-          <h3>Semillas de pepino</h3>
-          <p>9.30 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Semillas de Margarita Simple mix en sobre Hortus', 'Las semillas son de gran calidad y con el debido cuidado obtendrás los resultados esperados. Ideal para todo tipo de macetas.', '8.90 soles')">
-          <img src="https://www.pluginpro.es/1808/margarita-del-cabo.jpg" alt="Planta 4">
-          <h3>Semillas de Margarita</h3>
-          <p>8.90 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Semillas de Girasol', 'Semillas para siembra de Girasol Germinal, produce una flor amarilla fácil de cultivar que debe regarse una vez por semana. La planta alcanza una altura de 1.8 a 2 cm, con un tiempo de maduración de 80 días.', '7.50 soles')">
-          <img src="https://cdn.homedepot.com.mx/productos/395114/395114-d.jpg" alt="Planta 5">
-          <h3>Semillas de Girasol</h3>
-          <p>7.50 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Semillas de Manzana', 'Ideal para enriquecer dietas con un toque natural y saludable.', '8.30 soles')">
-          <img src="https://http2.mlstatic.com/D_NQ_NP_799035-MLA74129869657_012024-O.webp" alt="Planta 6">
-          <h3>Semillas de Manzana</h3>
-          <p>8.30 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Semillas de fresa', 'Este tipo de semillas es muy común que nazca por las semillas a granel (Debido a la cantidad) así que te sugiero regarlas 3 veces al día.', '17.90 soles')">
-          <img src="https://cemacogt.vtexassets.com/arquivos/ids/371884-800-800?v=638439085905200000&width=800&height=800&aspect=true" alt="Planta 7">
-          <h3>Semillas de fresa</h3>
-          <p>17.90 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Semillas de sandia', 'Descripción de pLa sandía, una de las frutas más frescas y jugosas, además contiene un alto valor en vitaminas.', '9.50 soles')">
-          <img src="https://media.falabella.com/sodimacPE/520659_01/w=1500,h=1500,fit=pad" alt="Planta 8">
-          <h3>Semillas de sandia</h3>
-          <p>9.50 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Semillas de Pera', 'Descripción de planta 9', '12.90 soles')">
-          <img src="https://i.ebayimg.com/thumbs/images/g/B08AAOSws4hnLFab/s-l1200.jpg" alt="Planta 9">
-          <h3>Semillas de Pera</h3>
-          <p>12.90 soles</p>
-        </div>
-        <div class="product" onclick="mostrarDetalles('Semillas de flores', 'Planta vivaz y de coloridos variados que dá una flor muy especial. Su follaje verde y recortado da color a los macizos.', '15.90 soles')">
-          <img src="https://www.lasemilleria.com/img/med/hf-aguilena-estrella.png" alt="Planta 10">
-          <h3>Semillas de flores</h3>
-          <p>15.90 soles</p>
-        </div>
-      </div>
+    <section class="catalog-section" data-categoria="Artículos de jardinería">
+      <h2>Artículos de jardinería</h2>
+      <div class="catalog-grid" id="grid-Artículos de jardinería"></div>
+    </section>
 
-      <button class="next" onclick="moverCarrusel('Semillas', 1)">❯</button>
-    </div>
-  </section>
-
-  <section class="catalog-section" data-categoria="Artículos de jardinería">
-    <h2>Artículos de jardinería</h2>
-    <div class="catalog-grid">
-      <div class="product" onclick="mostrarDetalles('BOTAS PVC ECO 1035', 'Fabricada con materiales flexibles y resistentes, caña plegable que garantiza comodidad y permite un fácil almacenamiento.', '27.90 soles')">
-        <img src="https://bellota.b-cdn.net/CMP4506/BOTA_PVC_ECO_1035_S_BELLOTA_MAIN_SZ6.png" alt="Planta 1">
-        <h3>Botas PVC</h3>
-        <p>27.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('Planta 2', 'Trabajarás la tierra de forma fácil y sencilla, resistente el desgaste, herramienta duradera.', '21.90 soles')">
-        <img src="https://bellota.b-cdn.net/CMP4506/PR4399BI15838_SA_3080_AZADAS_3080_SZ6.png" alt="Planta 2">
-        <h3>AZADAS 3080</h3>
-        <p>21.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('Zapapico Mango Fibra de Vidrio', 'Forjada en una sola pieza resistente a la deformación y al desgaste', '18 soles')">
-        <img src="https://bellota.b-cdn.net/CMP4506/PR19114BI25518_SA_PKHDL_Zapapico_Mango_Fibra_de_Vidrio_SZ6.png" alt="Planta 3">
-        <h3>Zapapico</h3>
-        <p>18 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('TIJERAS DE PODA 35XX', 'Descripción de planta 4', '16.90 soles')">
-        <img src="https://bellota.b-cdn.net/CMP4506/PR4386BI12386_SA_1006_TIJERAS_DE_PODA_35XX_SZ6.png" alt="Planta 4">
-        <h3>TIJERAS DE PODA 35XX</h3>
-        <p>16.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('CARRETILLA METALICA CHASIS MADERA LLANTA NEUMATICA', 'El trabajo pesado será mucho mas fácil y sencillo, resisten hasta 150 kg de carga.', '62.90 soles')">
-        <img src="https://bellota.b-cdn.net/CMP4506/1/FM3284BI12303_SA_110930_SZ6.png" alt="Planta 5">
-        <h3>CARRETILLA</h3>
-        <p>62.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('SERUCHO 14 MANGO MADERA', 'Hoja resistente y flexible, permite fácil manejo y evita entorpecer el trabajo.', '17.50 soles')">
-        <img src="https://bellota.b-cdn.net/CMP4506/PR18918BI25055_SA_SAW14MMS_SERUCHO_14_MANGO_MADERA_SZ6.jpg" alt="Planta 6">
-        <h3>Serrucho</h3>
-        <p>17.50 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('FUMIGADORA 1007 5 LT FCI', 'Herramienta eficaz en labores de agricultura, su función principal está asociada al riego de químicos de prevención y erradicación de todo tipo de plagas, aplicación de fertilizantes e hidratación de los cultivos. Su tamaño es ideal para usar en labores del hogar o jardín.', '21.90 soles')">
-        <img src="https://bellota.b-cdn.net/CMP4506/1/FM3637BI12330_SA_100706_SZ6.png" alt="Planta 7">
-        <h3>Fumigadora</h3>
-        <p>21.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('KIT JARDINERÍA 5 BELLOTA PRO', 'Podrás mover la tierra para sembrar semillas. Penetrar la tierra hasta la medida deseada. Mover y trasplantar cultivos. Ideal para utilizar en espacios abiertos y cerrados. Las herramientas no se oxidan.', '19.90 soles')">
-        <img src="https://bellota.b-cdn.net/CMP4506/PR17756BI22570_SA_SHT01L5NMAP_KIT_JARDINERIA_5_BELLOTA_PRO_SZ6.png" alt="Planta 8">
-        <h3>Kit de jardinería</h3>
-        <p>19.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('YOYO GUADAÑA THP1XX', 'Dispositivo usado para montar nylon y cortar césped delgado. Corte y control de malezas en terrenos agrícolas.', '25.90 soles')">
-        <img src="https://bellota.b-cdn.net/CMP4506/PR4550BI13679_SA_THP1_YOYO_GUADANA_THP1XX_SZ6.png" alt="Planta 7">
-        <h3>Yoyo Guadaña</h3>
-        <p>25.90 soles</p>
-      </div>
-      <div class="product" onclick="mostrarDetalles('HACHA CON MANGO FIBRA DE VIDRIO', 'Hacha de labor entera, ideal para cortar y rajar madera con mucha facilidad, la forma de la cabeza te permitirá cortar madera sin que se quede la herramienta atascada, el mango ergonómico bimaterial te ofrecerá una comodidad adecuada al momento de realizar la labor.', '23 soles')">
-        <img src="https://bellota.b-cdn.net/CMP4506/PR18633BI23330_SA_AX8126FG_HACHA_CON_MANGO_FIBRA_DE_VIDRIO_SZ6.png" alt="Planta 7">
-        <h3>Planta 7</h3>
-        <p>23 soles</p>
-      </div>
-    </div>
-  </section>
-
-   <!-- Overlay para fondo oscuro -->
+    <!-- Overlay para fondo oscuro -->
     <div class="overlay" id="overlay" onclick="cerrarCarrito()"></div>
 
     <!-- Carrito lateral -->
     <div class="carrito-lateral" id="carrito">
-        <div class="carrito-encabezado">
-            <h3>Mi Carrito</h3>
-            <button class="cerrar-carrito" onclick="cerrarCarrito()">×</button>
+      <div class="carrito-encabezado">
+        <h3>Mi Carrito</h3>
+        <button class="cerrar-carrito" onclick="cerrarCarrito()">×</button>
+      </div>
+      <div class="carrito-contenido" id="carrito-items"></div>
+      <div class="carrito-resumen">
+        <div class="subtotal">
+          <span>Subtotal:</span>
+          <span id="subtotal-valor">S/. 0.00</span>
         </div>
-        <div class="carrito-contenido" id="carrito-items"></div>
-        <div class="carrito-resumen">
-            <div class="subtotal">
-                <span>Subtotal:</span>
-                <span id="subtotal-valor">S/. 0.00</span>
-            </div>
-            <div class="envio">
-                <span>Envío:</span>
-                <span id="envio-valor" class="text-success">Gratis</span>
-            </div>
-            <div class="cupon-container">
-                <button class="cupon-toggle" onclick="toggleCupon()">¿Tienes un cupón de descuento?</button>
-                <div class="cupon-input" id="cupon-input">
-                    <input type="text" id="codigo-cupon" placeholder="Ingresa tu código">
-                    <button onclick="aplicarCupon()">Aplicar</button>
-                </div>
-                <p id="cupon-mensaje" class="text-success mt-2" style="display: none;">Cupón aplicado: -20%</p>
-            </div>
-            <div class="total">
-                <span>Total:</span>
-                <span id="total-valor">S/. 0.00</span>
-            </div>
-            <button class="tramitar-pedido" onclick="window.location.href='pasarela.html'">Tramitar pedido</button>
+        <div class="envio">
+          <span>Envío:</span>
+          <span id="envio-valor" class="text-success">Gratis</span>
         </div>
+        <div class="cupon-container">
+          <button class="cupon-toggle" onclick="toggleCupon()">
+            ¿Tienes un cupón de descuento?
+          </button>
+          <div class="cupon-input" id="cupon-input">
+            <input
+              type="text"
+              id="codigo-cupon"
+              placeholder="Ingresa tu código"
+            />
+            <button onclick="aplicarCupon()">Aplicar</button>
+          </div>
+          <p id="cupon-mensaje" class="text-success mt-2" style="display: none">
+            Cupón aplicado: -20%
+          </p>
+        </div>
+        <div class="total">
+          <span>Total:</span>
+          <span id="total-valor">S/. 0.00</span>
+        </div>
+        <button
+          class="tramitar-pedido"
+          onclick="window.location.href='pasarela.html'"
+        >
+          Tramitar pedido
+        </button>
+      </div>
     </div>
 
     <!-- Pie de página mejorado -->
     <footer class="w-100 pt-5 pb-4">
-        <div class="container">
-            <div class="row pb-3">
-                <div class="col-md-3 mb-4">
-                    <h5 class="text-white mb-3">AinboFlora</h5>
-                    <p class="text-white-50">Tu tienda de jardinería online en Perú. Ofrecemos plantas, maceteros,
-                        semillas y herramientas de la mejor calidad.</p>
-                    <div id="iconos" class="mt-3">
-                        <a href="https://www.facebook.com/asociacionbotanicadelperu/?locale=es_LA" class="me-2"><i
-                                class="bi bi-facebook"></i></a>
-                        <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
-                        <a href="https://www.instagram.com/aportebotanico/?hl=es" class="me-2"><i
-                                class="bi bi-instagram"></i></a>
-                        <a href="#"><i class="bi bi-youtube"></i></a>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <h5 class="text-white mb-3">Enlaces Rápidos</h5>
-                    <ul class="list-unstyled text-white-50">
-                        <li class="mb-2"><a href="Plantas.html" class="text-decoration-none text-white-50">Plantas</a>
-                        </li>
-                        <li class="mb-2"><a href="Maceteros.html"
-                                class="text-decoration-none text-white-50">Maceteros</a></li>
-                        <li class="mb-2"><a href="Semillas.html" class="text-decoration-none text-white-50">Semillas</a>
-                        </li>
-                        <li class="mb-2"><a href="Herramientas.html"
-                                class="text-decoration-none text-white-50">Herramientas</a></li>
-                        <li><a href="Catálogo.html" class="text-decoration-none text-white-50">Catálogo Completo</a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <h5 class="text-white mb-3">Ayuda</h5>
-                    <ul class="list-unstyled text-white-50">
-                        <li class="mb-2"><a href="RecomendacionesPersonalizadas.html" class="text-decoration-none text-white-50">Recomendaciones</a></li>
-                        <li class="mb-2"><a href="Rastreo.html" class="text-decoration-none text-white-50">Rastreo de Pedidos</a>
-                        </li>
-                        <li class="mb-2"><a href="#" class="text-decoration-none text-white-50">Devoluciones</a></li>
-                        <li class="mb-2"><a href="https://docs.google.com/forms/d/e/1FAIpQLSdhWCZWtx-I4dhqDqt_jfXnum8mTRhP99LBuMr4nJYmviZD8Q/viewform?usp=preview" class="text-decoration-none text-white-50">Formulario</a>
-                        </li>
-                        <li><a href="#" class="text-decoration-none text-white-50">Términos y Condiciones</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 mb-4">
-                    <h5 class="text-white mb-3">Contacto</h5>
-                    <ul class="list-unstyled text-white-50">
-                        <li class="mb-2"><i class="bi bi-geo-alt me-2"></i> Av. Javier Prado Este 4600, Lima</li>
-                        <li class="mb-2"><i class="bi bi-telephone me-2"></i> (01) 123-4567</li>
-                        <li class="mb-2"><i class="bi bi-whatsapp me-2"></i> +51 969 425 792</li>
-                        <li><i class="bi bi-envelope me-2"></i> info@ainboflora.pe</li>
-                    </ul>
-                </div>
+      <div class="container">
+        <div class="row pb-3">
+          <div class="col-md-3 mb-4">
+            <h5 class="text-white mb-3">AinboFlora</h5>
+            <p class="text-white-50">
+              Tu tienda de jardinería online en Perú. Ofrecemos plantas,
+              maceteros, semillas y herramientas de la mejor calidad.
+            </p>
+            <div id="iconos" class="mt-3">
+              <a
+                href="https://www.facebook.com/asociacionbotanicadelperu/?locale=es_LA"
+                class="me-2"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a href="#" class="me-2"><i class="bi bi-twitter"></i></a>
+              <a
+                href="https://www.instagram.com/aportebotanico/?hl=es"
+                class="me-2"
+                ><i class="bi bi-instagram"></i
+              ></a>
+              <a href="#"><i class="bi bi-youtube"></i></a>
             </div>
-            <hr class="border-light">
-            <div class="row mt-3">
-                <div class="col-md-6">
-                    <p class="text-white-50 mb-0">AinboFlora &copy; Todos Los Derechos Reservados 2025</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="text-white-50 mb-0">
-                        <img src="https://sistemahost.com/images/metodos-pago.png"
-                            alt="Métodos de pago" height="30">
-                    </p>
-                </div>
-            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-white mb-3">Enlaces Rápidos</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">
+                <a
+                  href="Plantas.html"
+                  class="text-decoration-none text-white-50"
+                  >Plantas</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Maceteros.html"
+                  class="text-decoration-none text-white-50"
+                  >Maceteros</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Semillas.html"
+                  class="text-decoration-none text-white-50"
+                  >Semillas</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Herramientas.html"
+                  class="text-decoration-none text-white-50"
+                  >Herramientas</a
+                >
+              </li>
+              <li>
+                <a
+                  href="Catálogo.html"
+                  class="text-decoration-none text-white-50"
+                  >Catálogo Completo</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-white mb-3">Ayuda</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">
+                <a
+                  href="RecomendacionesPersonalizadas.html"
+                  class="text-decoration-none text-white-50"
+                  >Recomendaciones</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="Rastreo.html"
+                  class="text-decoration-none text-white-50"
+                  >Rastreo de Pedidos</a
+                >
+              </li>
+              <li class="mb-2">
+                <a href="#" class="text-decoration-none text-white-50"
+                  >Devoluciones</a
+                >
+              </li>
+              <li class="mb-2">
+                <a
+                  href="https://docs.google.com/forms/d/e/1FAIpQLSdhWCZWtx-I4dhqDqt_jfXnum8mTRhP99LBuMr4nJYmviZD8Q/viewform?usp=preview"
+                  class="text-decoration-none text-white-50"
+                  >Formulario</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-white-50"
+                  >Términos y Condiciones</a
+                >
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-3 mb-4">
+            <h5 class="text-white mb-3">Contacto</h5>
+            <ul class="list-unstyled text-white-50">
+              <li class="mb-2">
+                <i class="bi bi-geo-alt me-2"></i> Av. Javier Prado Este 4600,
+                Lima
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-telephone me-2"></i> (01) 123-4567
+              </li>
+              <li class="mb-2">
+                <i class="bi bi-whatsapp me-2"></i> +51 969 425 792
+              </li>
+              <li><i class="bi bi-envelope me-2"></i> info@ainboflora.pe</li>
+            </ul>
+          </div>
         </div>
+        <hr class="border-light" />
+        <div class="row mt-3">
+          <div class="col-md-6">
+            <p class="text-white-50 mb-0">
+              AinboFlora &copy; Todos Los Derechos Reservados 2025
+            </p>
+          </div>
+          <div class="col-md-6 text-md-end">
+            <p class="text-white-50 mb-0">
+              <img
+                src="https://sistemahost.com/images/metodos-pago.png"
+                alt="Métodos de pago"
+                height="30"
+              />
+            </p>
+          </div>
+        </div>
+      </div>
     </footer>
 
+    <!-- Secciones de Maceteros, Abono y Jardinería siguen igual -->
 
-  <!-- Secciones de Maceteros, Abono y Jardinería siguen igual -->
-
-  <div id="modal" class="modal">
-    <div class="modal-content">
-      <span onclick="cerrarModal()" class="close">&times;</span>
-      <h2 id="modal-title"></h2>
-      <p id="modal-description"></p>
-      <p id="modal-price"></p>
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <span onclick="cerrarModal()" class="close">&times;</span>
+        <h2 id="modal-title"></h2>
+        <p id="modal-description"></p>
+        <p id="modal-price"></p>
+      </div>
     </div>
-  </div>
 
-  <script>
-    function mostrarDetalles(nombre, descripcion, precio) {
-      document.getElementById("modal-title").innerText = nombre;
-      document.getElementById("modal-description").innerText = descripcion;
-      document.getElementById("modal-price").innerText = precio;
-      document.getElementById("modal").style.display = "flex";
-    }
+    <script>
+      function mostrarDetalles(nombre, descripcion, precio) {
+        document.getElementById("modal-title").innerText = nombre;
+        document.getElementById("modal-description").innerText = descripcion;
+        document.getElementById("modal-price").innerText = precio;
+        document.getElementById("modal").style.display = "flex";
+      }
 
-    function cerrarModal() {
-      document.getElementById("modal").style.display = "none";
-    }
+      function cerrarModal() {
+        document.getElementById("modal").style.display = "none";
+      }
 
-    function filtrarCategoria(categoria) {
-      const secciones = document.querySelectorAll(".catalog-section");
-      secciones.forEach(seccion => {
-        if (categoria === 'Todas' || seccion.dataset.categoria === categoria) {
-          seccion.style.display = 'block';
-        } else {
-          seccion.style.display = 'none';
-        }
-      });
-    }
-    
-  </script>
+      function filtrarCategoria(categoria) {
+        const secciones = document.querySelectorAll(".catalog-section");
+        secciones.forEach((seccion) => {
+          if (
+            categoria === "Todas" ||
+            seccion.dataset.categoria === categoria
+          ) {
+            seccion.style.display = "block";
+          } else {
+            seccion.style.display = "none";
+          }
+        });
+      }
+    </script>
 
-  <script>
-    const estadosCarrusel = {
-      'Plantas': 0,
-      'Semillas': 0
-    };
-  
-    function moverCarrusel(categoria, direccion) {
-      const carrusel = document.getElementById("carrusel-" + categoria);
-      const productos = carrusel.querySelectorAll(".product");
-      const cantidadVisible = Math.floor(carrusel.offsetWidth / 350); // productos visibles
-      const maxIndex = productos.length - cantidadVisible;
-  
-      estadosCarrusel[categoria] += direccion;
-      if (estadosCarrusel[categoria] < 0) estadosCarrusel[categoria] = 0;
-      if (estadosCarrusel[categoria] > maxIndex) estadosCarrusel[categoria] = 0;
-  
-      carrusel.style.transform = `translateX(-${estadosCarrusel[categoria] * 230}px)`;
-    }
-  
-    function autoCarrusel(categoria) {
-      setInterval(() => {
-        moverCarrusel(categoria, 1);
-      }, 3000);
-    }
-  
-    autoCarrusel('Plantas');
-    autoCarrusel('Semillas');
-  </script>
-  <script src="/js/catalogo.js"></script>
-  
+    <script>
+      const estadosCarrusel = {
+        Plantas: 0,
+        Semillas: 0,
+      };
 
-</body>
+      function moverCarrusel(categoria, direccion) {
+        const carrusel = document.getElementById("carrusel-" + categoria);
+        const productos = carrusel.querySelectorAll(".product");
+        const cantidadVisible = Math.floor(carrusel.offsetWidth / 350); // productos visibles
+        const maxIndex = productos.length - cantidadVisible;
+
+        estadosCarrusel[categoria] += direccion;
+        if (estadosCarrusel[categoria] < 0) estadosCarrusel[categoria] = 0;
+        if (estadosCarrusel[categoria] > maxIndex)
+          estadosCarrusel[categoria] = 0;
+
+        carrusel.style.transform = `translateX(-${
+          estadosCarrusel[categoria] * 230
+        }px)`;
+      }
+
+      function autoCarrusel(categoria) {
+        setInterval(() => {
+          moverCarrusel(categoria, 1);
+        }, 3000);
+      }
+
+      autoCarrusel("Plantas");
+      autoCarrusel("Semillas");
+    </script>
+    <script src="/js/catalogo.js"></script>
+  </body>
 </html>
-
-
